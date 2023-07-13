@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/assets/game.svg">
+    <title>Supermarket Website</title>
+</head>
+<body>
+
+  <div class="background-image">
+    <div class="music-container">
+      <img src="images/icons/music.png" id="play-music-btn">
+    </div>
+  </div>
+
+    <div id="fruit-container" class="container ">
+        <div class="box1">
+          <div class="navigation-buttons">
+            <a href="./index3.html"><img id="back-button1" src="images/icons/back.png" alt="back"></a>
+            <h2>&nbsp;&nbsp;Fruit &nbsp;&nbsp;&nbsp;</h2>
+            
+          </div>
+          <div class="audio-player">
+    
+            <img style="height: 50px; width: 50px; margin-top: 65px;" src="./images/icons/sound.png" id="my-image2">
+              <audio src="./images/voice/fruit.mp3" preload="auto" id="my-audio2"></audio>
+              <a href="./index5.html"><img id="next-button"src="images/icons/next.png" alt="back"></a>
+    
+              <script>
+                const img = document.getElementById('my-image2');
+                const audio2 = document.getElementById('my-audio2');
+                img.addEventListener('click', () => {
+                  audio2.play();
+                });
+                  </script>
+              
+    
+              </div>
+                      </div>
+      
+        <div class="content">
+          <div class="content1">
+            <img src="images/assets/easyshoppinglist.PNG" alt="dairy image 1">
+          </div>
+          <div class="content2">
+            <img src="images/assets/shelve.png" alt="dairy image 2">
+            <img id="bananascontent" src="images/fruit/bananas.jpg" alt="milk image 2">
+             <a href="./products/banana.html"><button id="bananascontentbutton">Bananas</button></a>
+            <img id="orangescontent" src="images/fruit/organges.jpg" alt="butter image 2">
+            <a href="./products/orange.html"><button id="orangecontentbutton">Orange</button></a>
+            <img id="pearcontent" src="images/fruit/pear.jpg" alt="cheese image 2">
+            <a href="./products/pear.html"><button id="pearcontentbutton">Pear</button></a>
+          </div>
+        </div>
+      </div>
+     
+      <aside>
+        <section class="trolley-section1">
+         <a href="./troley.html"> <button style="border-radius: 50%;  background-color: transparent;">
+         <img src="./images/icons/checkout.png" alt="">
+        </button></a>
+        </section>
+      </aside>
+
+
+
+
+
+      <script src="index.js"></script>
+</body>
+</html>

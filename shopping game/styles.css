@@ -1,0 +1,2160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.background-image {
+  background-image: url("images/assets/background1.PNG");
+  background-size: cover;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 95%;
+  height: 95vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  position: relative; /* Add this line to make toggle-music position relative to background-image */
+}
+.background-image2 {
+  background-image: url("images/assets/background2.PNG");
+  background-size: cover;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 95%;
+  height: 95vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  position: relative; /* Add this line to make toggle-music position relative to background-image */
+}
+
+.toggle-music {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.container1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 80%;
+  width: 80%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0062cc;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+#background-music {
+  display: none;
+}
+
+
+h2{
+  font-size: 50px;
+}
+#easy-button{
+  
+  margin-right: 30px;
+}
+#hard-button{
+ 
+  margin-left: 30px;
+}
+
+/*add*/
+
+
+.dairy-container {
+ 
+  width: 500px;
+  height: 550px;
+  padding: 20px;
+  
+  
+}
+
+.vegetable-container {
+  
+  width: 500px;
+  height: 550px;
+  padding: 20px;
+  
+}
+
+.fruit-container {
+ 
+  width: 500px;
+  height: 550px;
+  padding: 20px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content2{
+  position: relative;
+}
+.content2 img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+
+
+/*---------------------------        Dairy      ---------------------*/
+
+
+
+
+
+#milkcontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#milkcontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#buttercontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#buttercontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+.navigation-buttons{
+  background-color: gray;
+  height: 50px;
+}
+
+#cheesecontent{
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#cheesecontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  margin-left: 40px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+/*---------------------------        Fruit      ---------------------*/
+
+
+
+
+
+
+
+#bananascontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#bananascontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#orangescontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#orangecontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#pearcontent{
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#pearcontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  margin-left: 40px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+/*---------------------------        Vegetables      ---------------------*/
+
+
+
+
+
+
+
+#lettucecontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#lettucecontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#cucumbercontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#cucumbercontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#carrotscontent{
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#carrotscontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  margin-left: 40px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+/*---------------------------        Bakery      ---------------------*/
+
+
+
+
+
+
+
+#breadcontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#breadcontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#muffincontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#muffincontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#tartcontent{
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#tartcontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  margin-left: 40px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+/*---------------------------        Canned      ---------------------*/
+
+
+
+
+
+
+
+#beanscontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#beanscontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#soupcontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#soupcontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------        Toiletries      ---------------------*/
+
+
+
+
+
+
+
+#shampoocontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#shampoocontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 60px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#Soapcontent{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#soapcontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#toilettissuecontent{
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+}
+#toilettissuecontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  margin-left: 40px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+#toothpastecontent{
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 250px;
+  height: 100px;
+  width: 100px;
+}
+#toothpastecontentbutton{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  margin-left: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+#back-button{
+  margin-left: -180px;
+  width: 180px;
+  height: 160px;
+}
+#next-button{
+  margin-top: 20px;
+  margin-right: -180px;
+  width: 180px;
+  height: 140px;
+}
+#back-button1{
+  margin-left: -180px;
+  width: 180px;
+  height: 160px;
+}
+#next-button1{
+  margin-top: 20px;
+  margin-right: -180px;
+  width: 180px;
+  height: 140px;
+}
+#back-button2{
+  margin-left: -180px;
+  width: 180px;
+  height: 160px;
+}
+#next-button2{
+  margin-top: 20px;
+  margin-right: -180px;
+  width: 180px;
+  height: 140px;
+}
+#back-button3{
+  margin-left: -180px;
+  width: 180px;
+  height: 160px;
+}
+#next-button3{
+  margin-top: 20px;
+  margin-right: -180px;
+  width: 180px;
+  height: 140px;
+}
+#back-button4{
+  margin-left: -180px;
+  width: 180px;
+  height: 160px;
+}
+#next-button4{
+  margin-top: 20px;
+  margin-right: -180px;
+  width: 180px;
+  height: 140px;
+}
+#back-button5{
+  margin-left: -180px;
+  width: 180px;
+  height: 160px;
+}
+#next-button5{
+  margin-top: 20px;
+  margin-right: -180px;
+  width: 180px;
+  height: 140px;
+}
+.zoom-out {
+  transform: scale(0.5);
+  transition: transform 0.2s ease-out;
+}
+
+
+.dairycontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+ 
+ 
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 900px;
+
+
+}
+.box1 {
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+ 
+}
+
+.content1,
+.content2 {
+  height: 400px;
+  width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 160px;
+  margin-left: -100px;
+ 
+}
+.content2{
+  right: 0;
+  
+}
+.content2{
+  left: 0;
+  
+}
+
+
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: gray;
+  margin-bottom: 10px;
+  margin-top: 35px;
+  height: 100px;
+  width: 500px;
+}
+
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+}
+/* Style for the audio button */
+#audio-button1, #audio-button2, #audio-button3, #audio-button4, #audio-button5, #audio-button6 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 90px;
+  margin-top: 39px;
+}
+
+
+/* Style for the back button */
+#back-button {
+  margin-right: 50px;
+}
+
+/* Style for the next button */
+#next-button {
+  margin-left: 50px;
+}
+
+/* Style for the audio button icon */
+#audio-button1 img, #audio-button2 img, #audio-button3 img, #audio-button4 img, #audio-button5 img, #audio-button6 img{
+  width: 35px;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+/* Style for the audio player container */
+.audio-player {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/**about the item to be added to the troley**/
+.bgphoto{
+  position: absolute;
+ 
+}
+#bgphotoimg{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 290px;
+  height: 600px;
+  width: auto;
+  
+}
+
+
+
+
+
+
+/*-----------------------------     Product Milk     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkcontainer #background-music1{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin-top: 150px;
+  margin-left: 500px;
+}
+
+
+
+
+
+/*-----------------------------     Product  Butter    ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+/*-----------------------------     Product Cheese     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Bananas     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Orange     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Pear     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Lettuce     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+/*-----------------------------     Product Cucumber     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+/*-----------------------------     Product Carrots     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+/*-----------------------------     Product Bread     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+/*-----------------------------     Product Muffin     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+/*-----------------------------     Product Tart     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+/*-----------------------------     Product Beans     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Soup     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+/*-----------------------------     Product Shampoo     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color:transparent;
+
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Soap     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+/*-----------------------------     Product tissue     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 75px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+
+/*-----------------------------     Product Toothpaste     ------------------------------*/
+.milkcontainer{
+  position: relative;
+  position: absolute;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  background-color: beige;
+}
+.milkcontainer img{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 160px;
+  width: 160px;
+}
+#milkxbtn{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 400px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#milkaddbtn{
+  position: relative;
+  height: 50px;
+  width: 90px;
+  margin-top: 205px;
+  margin-left: 380px;
+  color: white;
+  background-color: red;
+  border-radius: 15%;
+
+}
+.milkcontainer p{
+  position: relative;
+  margin-top: -120px;
+  margin-left: 200px;
+  margin-right: 180px;
+  font-size: 35px;
+
+}
+.milkspeakerdiv{
+  margin-top: -105px;
+  margin-left: 300px;
+}
+#milkspeakerimg{
+  
+  
+  height: 45px;
+  width: 45px;
+}
+
+
+
+
+/*troley*/
+
+.trolley-section {
+	position: relative;
+  position: absolute;
+  align-items: center;
+  margin-top: -600px;
+  margin-left: 300px;
+  height: 500px;
+  width: 850px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.trolley-section h3 {
+  background-color: rgb(255, 255, 255);
+  margin-top: -60px;
+  margin-left: 320px;
+  padding-left: 25px;
+  font-size: 15px;
+  
+  font-size: 40px;
+  width: 135px;
+}
+
+.trolley-section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.trolley-section li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trolley-section img {
+	max-width: 30%;
+	height: auto;
+}
+
+.trolley-section p {
+	font-weight: bold;
+	margin: 0;
+}
+
+.trolley-section button {
+	background-color: red;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 5px 10px;
+}
+
+.trolley-section button:hover {
+	background-color: #c82333;
+}
+.trolley-section1{
+  background-color: #f5f5f5;
+	bottom: 0;
+	height: fit-content;
+	position: fixed;
+  right: 0;
+	margin-right: 45px;
+  width: fit-content;
+	
+  margin-bottom: 30px;
+  background-color:green;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.trolley-section1 img{
+  width: 80px;
+  height: 80px;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/*------------------------pay -----------------------*/
+
+.content3 button{
+  background-color: transparent;
+}
+.content3 img{
+  margin-right: 500px;
+  margin-bottom: 230px;
+  width: 200px;
+  height: 150px;
+}
+
+
+/**background music ***/
+.music-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  overflow: hidden;
+ margin-left: 92%;
+}
+
+#play-music-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+#play-music-btn:hover {
+  transform: scale(1.1);
+}
+

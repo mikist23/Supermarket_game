@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Documents</title>
+</head>
+<body>
+
+    <div class="background-image">
+        
+    </div>
+
+
+<!---about he items to be added to the troley--> 
+   
+<div id="milk-container"  class="container hidden" id="dairy" class="aisle-section">
+  <div class="milkcontainer">
+    <a href="../index3.html"> <button id="milkxbtn">X</button></a>
+    <img id="milkcontainerimg" src="../images/dairyproducts/butter.jpg" alt=""> 
+    <p>Butter</p>
+    <div style="margin-left: 280px;margin-top: -150px;" class="audio-player">
+    
+      <img style=" margin-left: 80px; height: 50px; width: 50px; margin-top: 65px;" src="../images/icons/sound.png" id="my-image2">
+        <audio src="../images/voice/butter.mp3" preload="auto" id="my-audio2"></audio>
+        
+
+        <script>
+          const img = document.getElementById('my-image2');
+          const audio2 = document.getElementById('my-audio2');
+          img.addEventListener('click', () => {
+            audio2.play();
+          });
+            </script>
+        
+
+        </div>
+                </div>
+    <button id="milkaddbtn" onclick="addItemToTrolley('Butter')">Add</button> 
+</div>
+</div>
+
+<aside>
+  <section class="trolley-section1">
+   <a href="../troley.html"> <button style="border-radius: 50%;  background-color: transparent;">
+   <img src="../images/icons/checkout.png" alt="">
+  </button></a>
+  </section>
+</aside>
+
+    
+
+      <script src="../index.js"></script>
+
+</body>
+</html>
